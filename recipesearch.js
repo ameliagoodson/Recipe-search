@@ -43,6 +43,9 @@ function searchIngredients() {
         }).then(function (response) {
             console.log("response: " + JSON.stringify(response));
             localStorage.setItem("searchResults", JSON.stringify(response));
+            localStorage.setItem("ingredients", JSON.stringify(ingredientArray));
+            window.location.href = "./SearchResultPage.html";
+
         });
 
     })
