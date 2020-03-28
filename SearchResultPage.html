@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="SearchPage.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid" id="Heading">
+            <div class="container">
+              <h1 class="display-4">Search Results</h1>
+                
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2 breakfastbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Breakfast
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" id="lunchbt" type="button">Lunch</button>
+                                <button class="dropdown-item" id="dinnerbtn" type="button">Dinner</button>
+                                <button class="dropdown-item" id="dessertbtn" type="button">Dessert</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <form id="form">
+                            <input class="form-control" type="text" placeholder="Ingredients" id="ingredientInput">
+                            <button type="submit" class="btn btn-outline-secondary" id="ingredientsubmit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <div id="resultCards">
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <div class="media searchresults">
+                        <img src="https://via.placeholder.com/200" class="align-self-start mr-3 recipeimage" id="recipeimg1">
+                        <div class="media-body">
+                          <h5 class="mt-0" id="recipetitle1">Top-aligned media</h5>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          <a href="#" id="recipesrc1"><span class="divlink"></span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="media searchresults">
+                        <img src="https://via.placeholder.com/200" class="align-self-start mr-3 recipeimage" id="recipeimg2">
+                        <div class="media-body">
+                          <h5 class="mt-0" id="recipetitle2">Top-aligned media</h5>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          <a href="https://www.google.com" id="recipesrc2"><span class="divlink"></span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="media searchresults">
+                        <img src="https://via.placeholder.com/200" class="align-self-start mr-3 recipeimage" id="recipeimg3">
+                        <div class="media-body">
+                          <h5 class="mt-0" id="recipetitle3">Top-aligned media</h5>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          <a href="#" id="recipesrc3"><span class="divlink"></span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="media searchresults">
+                        <img src="https://via.placeholder.com/200" class="align-self-start mr-3 recipeimage" id="recipeimg4">
+                        <div class="media-body">
+                          <h5 class="mt-0" id="recipetitle4">Top-aligned media</h5>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          <a href="#" id="recipesrc4"><span class="divlink"></span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" id="recipe5">
+
+                </div>
+                <div class="col-md-6" id="recipe6">
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="https://github.com/">Return Home</a>
+          </nav>
+    </div>
+    
+    
+    <script src="searchresult.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
