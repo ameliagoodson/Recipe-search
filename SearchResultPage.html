@@ -12,67 +12,26 @@
     <link rel="stylesheet" type="text/css" href="SearchPage.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron jumbotron-fluid" id="Heading">
+    <div class="hero-img"></div>
         <div class="container">
           <h1 class="display-4">Search Results</h1>
-
           <div class="row">
-            <div class="col-md-2">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="dropdownMenu2 breakfastbtn"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Breakfast
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" id="lunchbt" type="button">
-                    Lunch
-                  </button>
-                  <button class="dropdown-item" id="dinnerbtn" type="button">
-                    Dinner
-                  </button>
-                  <button class="dropdown-item" id="dessertbtn" type="button">
-                    Dessert
-                  </button>
-                </div>
-              </div>
-            </div>
             <div class="col-md-4">
               <form id="form">
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder="Ingredients"
-                  id="ingredientInput"
-                />
-                <button
-                  type="submit"
-                  class="btn btn-outline-secondary"
-                  id="ingredientsubmit"
-                >
-                  Submit
-                </button>
+                <input class="form-control" type="text" placeholder="Ingredients"id="ingredientInput"/>
+                <button type="submit" class="btn btn-outline-secondary" id="ingredientsubmit"> Submit</button>
               </form>
             </div>
           </div>
         </div>
       </div>
-
       <div id="resultCards">
           <!--All dynamic content here-->
       </div>
-
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="https://github.com/">Return Home</a>
-      </nav>
+      <button>
+        <a href= "https://ameliagoodson.github.io/Recipe-search/AGindex">Home</a>
+      </button>
     </div>
-
     <script src="searchresult.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
