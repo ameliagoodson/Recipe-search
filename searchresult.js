@@ -43,8 +43,8 @@ function generateRecepieCard(recepie) {
     divMedia0i.append(para0i);
 
     var aTag0i = $("<a>");
-    aTag0i.attr("href", "#");
-    aTag0i.attr("id", "recepiesrc3");
+    aTag0i.attr("href", "./viewrecepiepage.html?recepie-id="+recepie.id);
+    aTag0i.attr("recepie-id", recepie.id);
 
     var spanOfATag0i = $("<span>");
     spanOfATag0i.addClass("divlink");
