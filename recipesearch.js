@@ -43,7 +43,7 @@ function searchIngredients() {
         }).then(function (response) {
             console.log("response: " + JSON.stringify(response));
             localStorage.setItem("searchResults", JSON.stringify(response));
-            window.location.href = './SearchResultPage.html';
+            window.location.href = "./SearchResultPage.html";
         });
 
     })
