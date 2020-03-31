@@ -36,7 +36,7 @@ function searchIngredients() {
         var queryParams = getQueryParams();
         
         var queryURL = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=" + queryParams + "&number=2" + "&apiKey=" + APIKey;
-        alert("queryURL: " + queryURL);
+
         $.ajax({
             url: queryURL,
             method: "GET"

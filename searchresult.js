@@ -34,7 +34,7 @@ function generateRecepieCard(recepie) {
     var h5RecepieTitle0i = $("<h5>");
     h5RecepieTitle0i.addClass("mt-0");
     h5RecepieTitle0i.attr("id", "recipetitle3");
-    h5RecepieTitle0i.text("Top-aligned media");
+    h5RecepieTitle0i.text(recepie.title);
     divMedia0i.append(h5RecepieTitle0i);
 
     var para0i = $("<p>");
@@ -43,7 +43,7 @@ function generateRecepieCard(recepie) {
     divMedia0i.append(para0i);
 
     var aTag0i = $("<a>");
-    aTag0i.attr("href", "./viewrecipepage.html?recepie-id="+recepie.id);
+    aTag0i.attr("href", "./viewrecepiepage.html?recepie-id="+recepie.id);
     aTag0i.attr("recepie-id", recepie.id);
 
     var spanOfATag0i = $("<span>");
