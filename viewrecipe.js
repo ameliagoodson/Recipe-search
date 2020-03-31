@@ -20,7 +20,7 @@ function renderRecepie() {
     var recepieID = getUrlParameter("recepie-id");
     //alert("recepieID: " + recepieID);
     var queryURL = "https://api.spoonacular.com/recipes/" + recepieID + "/information?includeNutrition=false&apiKey=" + APIKey;
-    alert("queryURL: " + queryURL);
+    //alert("queryURL: " + queryURL);
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -34,7 +34,7 @@ function renderRecepie() {
 }
 
 function generateRecepieTile(recepie) {
-    var divRecepieCard = $("#recepieCard");
+    var divRecepieCard = $("#recipeCard");
     var divCard0i = $("<div>");
     divCard0i.addClass("media searchresults");
     var img0i = $("<img>");
@@ -49,7 +49,7 @@ function generateRecepieTile(recepie) {
     var h5RecepieTitle0i = $("<h5>");
     h5RecepieTitle0i.addClass("mt-0");
     h5RecepieTitle0i.attr("id", "recipetitle3");
-    h5RecepieTitle0i.text("Top-aligned media");
+    h5RecepieTitle0i.text(recepie.title);
     divMedia0i.append(h5RecepieTitle0i);
 
     var para0i = $("<p>");
