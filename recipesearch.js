@@ -17,15 +17,27 @@ function getQueryParams() {
     return queryParams;
 }
 
+$("#form").submit(function (event) {
+    event.preventDefault();
+})
+
+
 function addNewIngredient() {
     $('#addBtn').on('click', function (event) {
+        event.preventDefault();
         txtSearchIngredient = $("#searchIngredient").val()
+        if (txtSearchIngredient.length === 0 ) {
+            $("#searchIngredient").attr("placeholder", "Please type an ingredient.")
+            return
+        } else {
+        $("#searchIngredient").val("")
+        $("#searchIngredient").attr("placeholder", "Ingredient added to list!")
         ingredientArray = txtSearchIngredient.split(",")
         for (i = 0; i < ingredientArray.length; i++) {
             var newFood = $('<button>')
             newFood.text(ingredientArray[i].trim())
             $("#selectFood").append(newFood)
-        }
+        }}
     })
 }
 addNewIngredient()
@@ -33,6 +45,7 @@ addNewIngredient()
 function searchIngredients() {
     
     $('#searchBtn').on('click', function () {
+        event.preventDefault();
         var queryParams = getQueryParams();
         
         var queryURL = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=" + queryParams + "&number=2" + "&apiKey=" + APIKey;

@@ -6,7 +6,7 @@ $("#ingredientsubmit").on("click", function () {
     event.preventDefault();
     var newingredient = $("#ingredientInput").val()
     if (newingredient.length === 0) {
-        $("#ingredientInput").attr("placeholder", "Please type an ingredient.")
+        $("#ingredientInput").attr("placeholder", "Please type an Ingredient.")
         return
     } else {
         ingredients.push(newingredient)
