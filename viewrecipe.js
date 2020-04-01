@@ -34,6 +34,7 @@ function renderRecepie() {
 }
 
 function generateRecepieTile(recepie) {
+    $("#recipeName").text(recepie.title)
     var divRecepieCard = $("#recipeCard");
     var divCard0i = $("<div>");
     divCard0i.addClass("media searchresults");
