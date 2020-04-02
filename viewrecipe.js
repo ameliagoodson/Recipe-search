@@ -57,8 +57,4 @@ function checkproperty(property, container) {
     } else {
         $(container).prop("checked", false);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c0b1d296ab3e9435c68508f754eeae1b7efa332f
