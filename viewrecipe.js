@@ -31,17 +31,15 @@ function renderRecepie() {
         checkproperty(response.glutenFree, "#gluten3");
         checkproperty(response.dairyFree, "#dairy3");
         $("#recipeSummary").html(response.summary);
-        var instructions = (response.instructions);
-        var splitInstructions = instructions.split(".");
-        for (i = 0; i < splitInstructions.length; i ++) {
-            if (splitInstructions[i] !== "") {
-                var ins = $("<li>");
-                ins.text(splitInstructions[i]);
-                $("#instructions").append(ins);
-            }
+        var instructions = response.analyzedInstructions[0].steps
+        for (i = 0; i < instructions.length; i ++) {
+            var ins = $("<li>");
+            ins.text(response.analyzedInstructions[0].steps[i].step);
+            $("#instructions").append(ins);
         }
-        var ingredients = (response.extendedIngredients);
-        for (i = 0; ingredients.length; i ++) {
+        var ingredients = response.extendedIngredients;
+        console.log(ingredients)
+        for (i = 0; i < ingredients.length; i ++) {
             var ingre = $("<li>");
             ingre.text(ingredients[i].name)
             $("#ingredients").append(ingre);

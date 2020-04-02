@@ -1,7 +1,7 @@
 
 .hero-img {
     background-image: url("Assets/hero-img.jpg"); 
-    height: 300px;
+    height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,9 +56,6 @@ input[type="checkbox"][readonly] {
 }
 #ingredients {
     width: auto;
-}
-#instructions {
-    
 }
 .clearfix::after {
     content: "";
