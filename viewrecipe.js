@@ -51,7 +51,6 @@ function renderRecepie() {
 
 }
 
-<<<<<<< HEAD
 function checkproperty(property, container) {
     if (property) {
         $(container).prop("checked", true);
@@ -68,17 +67,6 @@ function checkproperty(property, container) {
 //     //img0i.add
 //     img0i.attr("src", recepie.image);
 //     img0i.addClass("align-self-start mr-3 recipeimage");
-=======
-function generateRecepieTile(recepie) {
-    $("#recipeName").text(recepie.title)
-    var divRecepieCard = $("#recipeCard");
-    var divCard0i = $("<div>");
-    divCard0i.addClass("media searchresults");
-    var img0i = $("<img>");
-    //img0i.add
-    img0i.attr("src", recepie.image);
-    img0i.addClass("align-self-start mr-3 recipeimage");
->>>>>>> e47c7bf796a09ee2373e39724def8e910e835a4a
     
 //     divCard0i.append(img0i);
 
