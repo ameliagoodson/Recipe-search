@@ -47,10 +47,8 @@ function searchIngredients() {
 
     $('#searchBtn').on('click', function () {
         event.preventDefault();
-<<<<<<< HEAD
         if (validateSearch()) {
             var queryParams = getQueryParams();
-=======
         var queryParams = getQueryParams();
         
         var queryURL = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=" + queryParams + "&number=4&limitLicense=true&ranking=1" + "&apiKey=" + APIKey;
@@ -63,19 +61,6 @@ function searchIngredients() {
             localStorage.setItem("searchResults", JSON.stringify(response));
             window.location.href = "./SearchResultPage.html";
         });
->>>>>>> 12c91c1e839fd8b6b6adae21302529d6ba7258e6
-
-            var queryURL = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=" + queryParams + "&number=4" + "&apiKey=" + APIKey;
-
-            $.ajax({
-                url: queryURL,
-                method: "GET"
-            }).then(function (response) {
-                console.log("response: " + JSON.stringify(response));
-                localStorage.setItem("searchResults", JSON.stringify(response));
-                window.location.href = "./SearchResultPage.html";
-            });
-
         }
     }
     )
@@ -90,7 +75,3 @@ function validateSearch() {
     }
     return validateInput;
 }
-
-
-
-
