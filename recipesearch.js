@@ -48,7 +48,7 @@ function searchIngredients() {
         event.preventDefault();
         var queryParams = getQueryParams();
         
-        var queryURL = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=" + queryParams + "&number=2" + "&apiKey=" + APIKey;
+        var queryURL = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=" + queryParams + "&number=4" + "&apiKey=" + APIKey;
 
         $.ajax({
             url: queryURL,
