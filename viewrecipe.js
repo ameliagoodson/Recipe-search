@@ -56,6 +56,13 @@ function generateRecepieTile(recepie) {
     para0i.text(recepie.instructions);
     divMedia0i.append(para0i);
 
+    var aTag0i = $("<a>");
+    
+    var spanOfATag0i = $("<span>");
+    spanOfATag0i.addClass("divlink");
+    aTag0i.append(spanOfATag0i);
+    divMedia0i.append(aTag0i);
+
     divCard0i.append(divMedia0i);
     divRecepieCard.append(divCard0i);
 }
