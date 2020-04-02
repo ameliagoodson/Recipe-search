@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -9,6 +10,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+=======
+    font-family: Arial, Helvetica, sans-serif;
+}
+#headerTitle {
+text-align: center;
+color: aliceblue;
+padding-top: 75px;
+font-size: 60px;
+}
+
+.hero-img {
+    background-image: url("Assets/hero-img.jpg"); 
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;;
+>>>>>>> f5b1c390656f3a93c316cc8f90a24473fd4b459c
 }
 #Heading {
   padding: 4rem 2rem 2rem 2rem;
@@ -44,6 +63,7 @@ body {
 }
 
 .recipeimage {
+<<<<<<< HEAD
   border-radius: 10px;
   padding: 5px;
 }
@@ -54,3 +74,8 @@ body {
         padding: 1px;
       }
 }
+=======
+    border-radius: 10px;
+    padding: 5px;
+}
+>>>>>>> f5b1c390656f3a93c316cc8f90a24473fd4b459c
