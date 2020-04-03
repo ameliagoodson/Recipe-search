@@ -16,6 +16,10 @@ body {
   color: black;
   padding: 20px;
 }
+
+p {
+  font-weight: bold;
+}
 /*Home button*/
 #Home {
   position: absolute;

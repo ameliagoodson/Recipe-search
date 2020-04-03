@@ -34,7 +34,7 @@ function addNewIngredient() {
             $("#searchIngredient").attr("placeholder", "Ingredient added to list!")
             ingredientArray = txtSearchIngredient.split(",")
             for (i = 0; i < ingredientArray.length; i++) {
-                var newFood = $('<button>')
+                var newFood = $('<p>')
                 newFood.text(ingredientArray[i].trim())
                 $("#selectFood").append(newFood)
             }
