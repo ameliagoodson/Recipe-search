@@ -103,11 +103,11 @@ function addEventListeners() {
       //display: none,
       initContent: function() {
         $("#ok").jqxButton({ width: "65px" });
-        $("#cancel").jqxButton({ width: "65px" });
+        //$("#cancel").jqxButton({ width: "65px" });
         $("#ok").focus();
       }
     });
-    $("#showWindowButton").jqxButton({ width: "100px" });
+    //$("#showWindowButton").jqxButton({ width: "100px" });
   }
   $(document).ready(function() {
     addEventListeners();
