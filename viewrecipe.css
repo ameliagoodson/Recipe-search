@@ -8,6 +8,15 @@
     position: relative;;
 
 }
+/*Home button*/
+#Home {
+    position: absolute;
+    bottom: 0px;
+  }
+  .buttonlink {
+    color: white !important;
+    text-decoration: none;
+  }
 
 /*Response style*/
 #reciperesponse {
