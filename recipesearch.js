@@ -1,7 +1,7 @@
 
 var ingredientArray = [];
 var txtSearchIngredient = $("#searchIngredient").val()
-var APIKey = "96aa363d6b8b4e798af15863b16aaf0e"
+var APIKey = "6464a1cfe1e941be95898521860bc5df" //"96aa363d6b8b4e798af15863b16aaf0e"
 var queryParams = getQueryParams();
 
 function getQueryParams() {
@@ -34,7 +34,7 @@ function addNewIngredient() {
             $("#searchIngredient").attr("placeholder", "Ingredient added to list!")
             ingredientArray = txtSearchIngredient.split(",")
             for (i = 0; i < ingredientArray.length; i++) {
-                var newFood = $('<button>')
+                var newFood = $('<p>')
                 newFood.text(ingredientArray[i].trim())
                 $("#selectFood").append(newFood)
             }
