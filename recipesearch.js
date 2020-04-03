@@ -1,7 +1,7 @@
 
 var ingredientArray = [];
 var txtSearchIngredient = $("#searchIngredient").val()
-var APIKey = "6464a1cfe1e941be95898521860bc5df" //"96aa363d6b8b4e798af15863b16aaf0e"
+var APIKey = "ebeadb6afabf46a58d16c7e3e6175a10"; //"96aa363d6b8b4e798af15863b16aaf0e"
 var queryParams = getQueryParams();
 
 function getQueryParams() {
