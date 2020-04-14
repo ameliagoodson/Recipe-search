@@ -1,4 +1,7 @@
-# Project 1 - Recipe search app: What's in your Fridge?
+# Link to deployed app:
+https://ameliagoodson.github.io/Recipe-search/
+
+# Recipe search app: What's in your Fridge?
 What's in your Fridge is a recipe search app with a difference: the user searches by ingredient. 
 
 This web app is designed so that people can search recipes by the ingredients they already have, to prevent them from having to go grocery shopping, to minimise waste and to encourage creative cooking.
